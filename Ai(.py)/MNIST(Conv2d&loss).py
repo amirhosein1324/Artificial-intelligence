@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from torch.utils.data import Dataset,DataLoader
 
 train_dataset = torchvision.datasets.MNIST(root="./data", train=True, download=True,
-                                           transform=torchvision.transforms.ToTensor())
+                                         transform=torchvision.transforms.ToTensor())
 
 train_dataset[0][0].shape
 
